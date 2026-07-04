@@ -3,8 +3,18 @@ import { heroStats } from "../types/stats";
 import NetworkBackground from "./NetworkBackground";
 
 export default function Hero() {
+  const proofHighlights = [
+    { value: "200,000+", label: "Community members reached" },
+    { value: "12+", label: "African countries" },
+    { value: "30+", label: "Physical events delivered" },
+    { value: "500+", label: "X Spaces hosted" },
+  ];
+
   return (
-    <section id="top" className="relative overflow-hidden border-b border-border pt-32 sm:pt-40">
+    <section
+      id="top"
+      className="relative overflow-hidden border-b border-border pt-28 sm:pt-36"
+    >
       <NetworkBackground />
 
       {/* corner circuit accent, decorative */}
@@ -19,54 +29,59 @@ export default function Hero() {
             <path d="M0 90 L60 150 L140 150" />
             <circle cx="120" cy="60" r="2" fill="#F5A623" stroke="none" />
             <circle cx="60" cy="150" r="2" fill="#F5A623" stroke="none" />
-            <rect x="150" y="20" width="10" height="10" transform="rotate(45 155 25)" />
+            <rect
+              x="150"
+              y="20"
+              width="10"
+              height="10"
+              transform="rotate(45 155 25)"
+            />
           </g>
         </svg>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 pb-24 sm:px-10">
-        <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
-          Africa&rsquo;s Ecosystem Activation Engine
+      <div className="relative mx-auto max-w-7xl px-6 pb-16 sm:px-10 sm:pb-20">
+        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
+          Proof. Numbers. Action.
         </p>
 
-        <h1 className="font-display text-5xl font-bold leading-[1.03] text-white sm:text-6xl md:text-7xl">
-          We Build
-          <br />
-          <span>Communities</span>
-          <br />
-          That Convert.
+        <h1 className="max-w-4xl font-display text-4xl font-bold leading-[1.02] text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          We Build Communities That Convert.
         </h1>
 
-        <p className="mt-8 max-w-xl text-lg text-white/60">
-          From campus masterclasses to pan-African summits, we design and
-          execute decentralized onboarding frameworks that turn interest into
-          active developers, users, and advocates — across 6 African
-          countries and counting.
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/65 sm:text-lg">
+          TechBurst designs and runs the systems that connect communities,
+          founders, developers, institutions, and ecosystems across Africa. From
+          high-energy activations to long-term onboarding, we make participation
+          measurable, repeatable, and real.
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="#case-studies"
-            className="inline-flex items-center gap-2 rounded-md bg-orange px-6 py-3.5 text-sm font-semibold text-black transition-colors hover:bg-orange-light"
+            href="#hackathons"
+            className="inline-flex items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-black transition-colors hover:bg-orange-light"
           >
-            See Our Proof of Work
+            See Our Impact
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
             href="#services"
-            className="inline-flex items-center rounded-md border border-orange px-6 py-3.5 text-sm font-semibold text-orange transition-colors hover:bg-orange/10"
+            className="inline-flex items-center rounded-md border border-orange px-5 py-3 text-sm font-semibold text-orange transition-colors hover:bg-orange/10"
           >
-            Our Services
+            Explore Services
           </a>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 gap-8 border-t border-border pt-10 sm:grid-cols-4">
-          {heroStats.map((stat) => (
-            <div key={stat.label}>
-              <div className="font-display text-3xl font-bold text-orange sm:text-4xl">
+        <div className="mt-8 grid grid-cols-2 gap-3 rounded-2xl border border-border bg-black/40 p-3 shadow-[0_0_0_1px_rgba(255,106,0,0.08)] backdrop-blur-sm sm:grid-cols-4 sm:p-4">
+          {proofHighlights.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-xl border border-border/80 bg-surface/70 p-3 sm:p-4"
+            >
+              <div className="font-display text-2xl font-bold text-orange sm:text-3xl">
                 {stat.value}
               </div>
-              <div className="mt-1 text-xs uppercase tracking-wide text-white/50">
+              <div className="mt-1 text-[11px] uppercase tracking-[0.16em] text-white/50 sm:text-xs">
                 {stat.label}
               </div>
             </div>

@@ -3,17 +3,17 @@
 @theme {
   --color-black: #0A0A0A;
   --color-surface: #141414;
-  --color-border: #FF6A00;
+  --color-border: #FFBF00;
 
-  --color-orange: #FF6A00;
-  --color-orange-light: #FF8C00;
+  --color-orange: #FFBF00;
+  --color-orange-light: #FFBF00;
 
   --font-display: var(--font-display);
   --font-body: var(--font-body);
 }
 
 ::selection {
-  background-color: #FF6A00;
+  background-color: #CC5500;
   color: #000000;
 }
 

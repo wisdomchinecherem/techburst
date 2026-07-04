@@ -29,9 +29,9 @@ export default function StatsSection() {
           ))}
         </div>
 
-        <p className="mt-4 text-xs text-white/30">
+        {/* <p className="mt-4 text-xs text-white/30">
           * Row 2 metrics use placeholder labels pending final copy.
-        </p>
+        </p> */}
       </div>
     </section>
   );
