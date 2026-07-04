@@ -1,6 +1,9 @@
 import { Gem } from "lucide-react";
 
-const footerLinks = {
+const footerLinks: Record<
+  string,
+  Array<{ label: string; href: string; target?: string }>
+> = {
   Company: [
     { label: "Services", href: "#services" },
     { label: "Hackathons & Web3", href: "#hackathons" },
@@ -9,7 +12,7 @@ const footerLinks = {
   ],
   Connect: [
     { label: "Partner With Us", href: "#partner" },
-    { label: "Twitter / X", href: "#" },
+    { label: "Twitter / X", href: "https://x.com/T3chBurst", target: "_blank" },
     { label: "LinkedIn", href: "#" },
   ],
 };
@@ -23,7 +26,7 @@ export default function Footer() {
             <div className="flex items-center gap-2.5">
               <Gem className="h-6 w-6 text-orange" strokeWidth={2} />
               <span className="font-display text-lg font-bold text-white">
-                TECH-BURST
+                TECHBURST
               </span>
             </div>
             <p className="mt-4 text-sm text-white/50">
@@ -38,22 +41,36 @@ export default function Footer() {
                 <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-white/40">
                   {heading}
                 </h4>
-                {links.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    className="mb-3 block text-sm text-white/70 hover:text-orange"
-                  >
-                    {link.label}
-                  </a>
-                ))}
+                {links.map((link) => {
+                  const isExternal = link.href.startsWith("http");
+
+                  return (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      target={
+                        isExternal || link.target === "_blank"
+                          ? "_blank"
+                          : undefined
+                      }
+                      rel={
+                        isExternal || link.target === "_blank"
+                          ? "noreferrer noopener"
+                          : undefined
+                      }
+                      className="mb-3 block text-sm text-white/70 hover:text-orange"
+                    >
+                      {link.label}
+                    </a>
+                  );
+                })}
               </div>
             ))}
           </div>
         </div>
 
         <div className="mt-14 flex flex-wrap justify-between gap-4 border-t border-border pt-8 text-xs text-white/35">
-          <span>© 2026 TECH-BURST. All rights reserved.</span>
+          <span>© 2026 TECHBURST. All rights reserved.</span>
           <span>Built for builders.</span>
         </div>
       </div>

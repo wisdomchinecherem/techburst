@@ -16,7 +16,7 @@ export default function Navbar() {
         <Link href="#top" className="flex items-center gap-2.5">
           <Gem className="h-6 w-6 text-orange" strokeWidth={2} />
           <span className="font-display text-lg font-bold tracking-tight text-white">
-            TECH-BURST
+            TECHBURST
           </span>
         </Link>
 

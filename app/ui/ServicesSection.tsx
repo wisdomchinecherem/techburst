@@ -2,7 +2,10 @@ import { services } from "../types/services";
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="border-b border-border px-6 py-20 sm:px-10">
+    <section
+      id="services"
+      className="border-b border-border px-6 py-12 sm:px-10 sm:py-16"
+    >
       <div className="mx-auto max-w-7xl">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
           What We Do
@@ -15,21 +18,21 @@ export default function ServicesSection() {
           proposals, not pitches.
         </p>
 
-        <div className="mt-14 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <div key={service.number} className="bg-black p-8">
-                <div className="mb-8 flex items-center justify-between">
+              <div key={service.number} className="bg-black p-5 sm:p-6">
+                <div className="mb-5 flex items-center justify-between">
                   <Icon className="h-6 w-6 text-orange" strokeWidth={1.75} />
                   <span className="font-display text-sm text-white/30">
                     {service.number}
                   </span>
                 </div>
-                <h3 className="font-display text-lg font-bold text-white">
+                <h3 className="font-display text-base font-bold text-white sm:text-lg">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/55">
+                <p className="mt-2 text-sm leading-relaxed text-white/55">
                   {service.description}
                 </p>
               </div>

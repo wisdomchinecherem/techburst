@@ -20,7 +20,7 @@ export default function CaseStudiesSection() {
   return (
     <section
       id="case-studies"
-      className="scroll-mt-24 border-b border-border px-6 py-20 sm:px-10"
+      className="scroll-mt-24 border-b border-border px-6 py-12 sm:px-10 sm:py-16"
     >
       <div className="mx-auto max-w-7xl">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
@@ -30,20 +30,20 @@ export default function CaseStudiesSection() {
           Proof of work, not promises.
         </h2>
         <p className="mt-6 max-w-xl text-base text-white/60 sm:text-lg">
-          [Placeholder] A closer look at how our activation framework plays
-          out on the ground — real numbers from real campuses and summits.
+          [Placeholder] A closer look at how our activation framework plays out
+          on the ground — real numbers from real campuses and summits.
         </p>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-3">
           {placeholderCaseStudies.map((study) => (
             <div
               key={study.title}
               className="overflow-hidden rounded-xl border border-border bg-surface"
             >
-              <div className="p-4 pb-0">
+              <div className="p-3 pb-0">
                 <ImagePlaceholder label="Case study photo" aspect="video" />
               </div>
-              <div className="p-6">
+              <div className="p-4 sm:p-5">
                 <h3 className="font-display text-base font-bold text-white">
                   {study.title}
                 </h3>

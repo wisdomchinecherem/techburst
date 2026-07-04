@@ -4,7 +4,7 @@ export default function PartnersSection() {
   return (
     <section
       id="partners"
-      className="scroll-mt-24 border-b border-border px-6 py-20 sm:px-10"
+      className="scroll-mt-24 border-b border-border px-6 py-12 sm:px-10 sm:py-16"
     >
       <div className="mx-auto max-w-7xl">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
@@ -14,17 +14,17 @@ export default function PartnersSection() {
           Built alongside the ecosystem, not on top of it.
         </h2>
         <p className="mt-6 max-w-xl text-base text-white/60 sm:text-lg">
-          [Placeholder] Details on protocol and foundation partnerships go
-          here — what each partnership involves and what it unlocked.
+          [Placeholder] Details on protocol and foundation partnerships go here
+          — what each partnership involves and what it unlocked.
         </p>
 
-        <div className="mt-14 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {Array.from({ length: 8 }).map((_, i) => (
             <ImagePlaceholder
               key={i}
               label="Partner logo"
               aspect="square"
-              className="p-6"
+              className="p-3 sm:p-4"
             />
           ))}
         </div>
