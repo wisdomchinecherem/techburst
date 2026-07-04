@@ -1,6 +1,6 @@
-import { Web3Project } from "@/types";
 import TechChip from "./TechChip";
 import ImagePlaceholder from "./ImagePlaceholder";
+import { Web3Project } from "../types";
 
 interface ProjectCardProps {
   project: Web3Project;
