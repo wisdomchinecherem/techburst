@@ -1,13 +1,13 @@
-import AboutSection from "./components/AboutSection";
-import CaseStudiesSection from "./components/CaseStudiesSection";
-import Footer from "./components/Footer";
-import HackathonsSection from "./components/HackathonsSection";
-import Hero from "./components/Hero";
-import LogoMarquee from "./components/LogoMarquee";
-import Navbar from "./components/Navbar";
-import PartnersSection from "./components/PartnersSection";
-import ServicesSection from "./components/ServicesSection";
-import StatsSection from "./components/StatsSection";
+import AboutSection from "./ui/AboutSection";
+import CaseStudiesSection from "./ui/CaseStudiesSection";
+import Footer from "./ui/Footer";
+import HackathonsSection from "./ui/HackathonsSection";
+import Hero from "./ui/Hero";
+import LogoMarquee from "./ui/LogoMarquee";
+import Navbar from "./ui/Navbar";
+import PartnersSection from "./ui/PartnersSection";
+import ServicesSection from "./ui/ServicesSection";
+import StatsSection from "./ui/StatsSection";
 import "./globals.css";
 
 
