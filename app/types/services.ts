@@ -1,5 +1,5 @@
 import { BookOpen, Users, Zap, Code2, Trophy, BarChart3 } from "lucide-react";
-import { Service } from "@/types";
+import { Service } from "./index";
 
 export const services: Service[] = [
   {

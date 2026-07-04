@@ -1,4 +1,4 @@
-import { Stat } from "@/types";
+import { Stat } from "./index";
 
 // Compact stats shown directly under the hero CTAs
 export const heroStats: Stat[] = [
