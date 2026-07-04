@@ -32,7 +32,7 @@ export default function Hero() {
         <h1 className="font-display text-5xl font-bold leading-[1.03] text-white sm:text-6xl md:text-7xl">
           We Build
           <br />
-          <span className="text-orange">Communities</span>
+          <span>Communities</span>
           <br />
           That Convert.
         </h1>

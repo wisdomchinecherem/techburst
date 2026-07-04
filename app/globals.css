@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-black: #0A0A0A;
+  --color-surface: #141414;
+  --color-border: #FF6A00;
+
+  --color-orange: #FF6A00;
+  --color-orange-light: #FF8C00;
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
 
 ::selection {
-  background-color: #f5a623;
+  background-color: #FF6A00;
   color: #000000;
 }
 
@@ -32,6 +43,6 @@ html {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #f5a623;
+  outline: 2px solid #FF6A00;
   outline-offset: 3px;
 }

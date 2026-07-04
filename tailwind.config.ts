@@ -10,10 +10,10 @@ const config: Config = {
       colors: {
         black: "#0A0A0A",
         surface: "#141414",
-        border: "#262626",
+        border: "#FF6A00",
         orange: {
-          DEFAULT: "#F5A623",
-          light: "#FFC168",
+          DEFAULT: "#FF6A00",
+          light: "#FF6A00",
         },
       },
       fontFamily: {
