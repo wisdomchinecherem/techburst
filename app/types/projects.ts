@@ -1,4 +1,4 @@
-import { Web3Project, FeaturedStat } from "@/types";
+import { Web3Project, FeaturedStat } from "../types";
 
 export const featuredStats: FeaturedStat[] = [
   { label: "Funding Secured", value: "$15,000" },
