@@ -70,8 +70,8 @@ const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    title: "Lagos Dev Fest",
-    result: "1,00+ attendees, 49 partner-led breakout sessions.",
+    title: "GDG Lagos Dev Fest",
+    result: "1,000+ attendees, 49 partner-led breakout sessions.",
     slides: [
       {
         title: "Lagos main stage",
@@ -106,7 +106,7 @@ const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    title: "Accra Onboarding Sprint",
+    title: "Web3 Mashinani Pilot",
     result: "126 developers shipped their first on-chain transaction.",
     slides: [
       {

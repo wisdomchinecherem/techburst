@@ -30,6 +30,10 @@ export default function RootLayout({
       lang="en"
       className={`${displayFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+      </head>
       <body className="min-h-full flex flex-col bg-[#0f1011] text-[#fdfdff]">
         {children}
       </body>

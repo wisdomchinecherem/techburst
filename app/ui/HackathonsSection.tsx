@@ -60,7 +60,7 @@ export default function HackathonsSection() {
         </div>
 
         <div className="mt-8 overflow-hidden rounded-[32px] bg-[#090909] shadow-[0_40px_120px_rgba(0,0,0,0.25)]">
-          <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+          <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
             <div className="flex flex-col justify-center gap-8 p-8 sm:p-10 lg:p-12">
               <div className="inline-flex items-center gap-3 rounded-full bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-orange">
                 <span className="text-lg">🏆</span>
@@ -72,14 +72,25 @@ export default function HackathonsSection() {
                   Web3Voice
                 </h3>
                 <p className="mt-4 max-w-3xl text-base leading-8 text-white/70 sm:text-lg">
-                  A premier example of AI and blockchain convergence, Web3Voice tokenizes human discourse and rewards meaningful contributions. Its modular architecture distills insight from X Spaces and anchors it on-chain, creating a community-owned knowledge layer where voices are validated and rewarded through
-                  <span className="font-semibold text-orange"> VOICE tokens.</span>
+                  A premier example of AI and blockchain convergence, Web3Voice
+                  tokenizes human discourse and rewards meaningful
+                  contributions. Its modular architecture distills insight from
+                  X Spaces and anchors it on-chain, creating a community-owned
+                  knowledge layer where voices are validated and rewarded
+                  through
+                  <span className="font-semibold text-orange">
+                    {" "}
+                    VOICE tokens.
+                  </span>
                 </p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 {featuredStats.map((stat) => (
-                  <div key={stat.label} className="rounded-3xl bg-[#040404] p-5 ring-1 ring-white/5">
+                  <div
+                    key={stat.label}
+                    className="rounded-3xl bg-[#040404] p-5 ring-1 ring-white/5"
+                  >
                     <div className="font-display text-2xl font-bold text-orange sm:text-3xl">
                       {stat.value}
                     </div>
@@ -96,7 +107,9 @@ export default function HackathonsSection() {
                     Technical Excellence
                   </h4>
                   <p className="mt-2 text-sm leading-relaxed text-white/60">
-                    Built on Filecoin/IPFS for decentralized storage, with advanced LLM pipelines handling insight extraction and sentiment analysis at scale.
+                    Built on Filecoin/IPFS for decentralized storage, with
+                    advanced LLM pipelines handling insight extraction and
+                    sentiment analysis at scale.
                   </p>
                 </div>
                 <div className="rounded-3xl bg-[#040404] p-5 ring-1 ring-white/5">
@@ -104,7 +117,9 @@ export default function HackathonsSection() {
                     Funding &amp; Acceleration
                   </h4>
                   <p className="mt-2 text-sm leading-relaxed text-white/60">
-                    Secured $15,000 in funding, with the founding team now scaling the ecosystem at the Founders Forge accelerator program.
+                    Secured $15,000 in funding, with the founding team now
+                    scaling the ecosystem at the Founders Forge accelerator
+                    program.
                   </p>
                 </div>
               </div>
@@ -116,17 +131,30 @@ export default function HackathonsSection() {
               </div>
             </div>
 
-            <div className="relative overflow-hidden bg-[#0B0B0B] lg:rounded-l-none">
-              <div className="relative h-[420px] sm:h-[520px] lg:h-full">
-                <Image
-                  src={Web3VoiceImage}
-                  alt="Web3Voice dashboard preview"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute left-6 bottom-6 rounded-full border border-white/10 bg-black/70 px-4 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-orange">
-                Web3Voice
+            <div className="flex items-center justify-center p-8 sm:p-10 lg:p-12">
+              <div className="relative w-full max-w-[520px] overflow-hidden rounded-[32px] border border-white/10 bg-[#0B0B0B] p-5 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+                <div className="absolute right-4 top-4 rounded-full border border-white/10 bg-black/70 px-4 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-orange">
+                  Web3Voice
+                </div>
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-[#111]/80">
+                  <Image
+                    src={Web3VoiceImage}
+                    alt="Web3Voice dashboard preview"
+                    fill
+                    className="object-contain object-center"
+                  />
+                </div>
+                <div className="mt-6 space-y-3">
+                  <p className="text-sm leading-relaxed text-white/70">
+                    Web3Voice is shown inside a polished preview card rather
+                    than stretched across a full panel. This keeps the image
+                    visible, proportionate, and aligned with the section.
+                  </p>
+                  <p className="text-sm leading-relaxed text-white/70">
+                    The design now gives the screenshot room to breathe while
+                    still highlighting the product in a premium Web3 showcase.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
