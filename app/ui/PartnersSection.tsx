@@ -1,4 +1,27 @@
-import ImagePlaceholder from "./ImagePlaceholder";
+import Image from "next/image";
+import africaHackon from "@/public/logos/AFRICAHACKON.png";
+import avalanche from "@/public/logos/AVALANCHE.png";
+import base from "@/public/logos/BASE.png";
+import brave from "@/public/logos/brave.png";
+import celo from "@/public/logos/CELO.png";
+import gdgNairobi from "@/public/logos/GDG NAIROBI.png";
+import icp from "@/public/logos/ICP LOGO.jpeg";
+import kca from "@/public/logos/KCA UNIVERSITY.png";
+import riara from "@/public/logos/RIARA UNIVERSITY.jpeg";
+import zetech from "@/public/logos/ZETECH LOGO.png";
+
+const partnerLogos = [
+  { name: "AfricaHackon", image: africaHackon },
+  { name: "Avalanche", image: avalanche },
+  { name: "Base", image: base },
+  { name: "Brave", image: brave },
+  { name: "Celo", image: celo },
+  { name: "GDG Nairobi", image: gdgNairobi },
+  { name: "ICP", image: icp },
+  { name: "KCA University", image: kca },
+  { name: "Riara University", image: riara },
+  { name: "Zetech", image: zetech },
+];
 
 export default function PartnersSection() {
   return (
@@ -18,15 +41,27 @@ export default function PartnersSection() {
           — what each partnership involves and what it unlocked.
         </p>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <ImagePlaceholder
-              key={i}
-              label="Partner logo"
-              aspect="square"
-              className="p-3 sm:p-4"
-            />
-          ))}
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          {partnerLogos.map((partner) => {
+            const isBrave = partner.name === "Brave";
+
+            return (
+              <div
+                key={partner.name}
+                className={`flex h-28 items-center justify-center rounded-2xl border border-border p-3 sm:p-4 ${
+                  isBrave ? "bg-[#fdfdff]" : "bg-[#fdfdff]"
+                }`}
+              >
+                <Image
+                  src={partner.image}
+                  alt={`${partner.name} logo`}
+                  width={140}
+                  height={140}
+                  className="max-h-full max-w-full object-contain object-center"
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

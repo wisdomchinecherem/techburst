@@ -6,12 +6,16 @@ import TechChip from "./TechChip";
 import ProjectCard from "./ProjectCard";
 import ImagePlaceholder from "./ImagePlaceholder";
 import Web3VoiceImage from "@/public/webprojects/Screenshot 2026-07-04 233034.png";
-// import circleLogo from "@/public/webprojects/"
+import circleLogo from "@/public/logos/Circle_.png";
+import Tether from "@/public/logos/Tether.png";
+import EthSafari from "@/public/logos/ETH SAFARI.png";
+import Hackmara from "@/public/logos/MARA.png";
 
 const showcaseProjects = [
-  { name: "Circle", image: Web3VoiceImage },
-  { name: "Protocol Labs", image: Web3VoiceImage },
-  { name: "ETH safari", image: Web3VoiceImage },
+  { name: "Circle", image: circleLogo },
+  { name: "Tether", image: Tether },
+  { name: "ETH safari", image: EthSafari },
+  { name: "Hack The Mara", image: Hackmara },
 ];
 
 export default function HackathonsSection() {
@@ -38,15 +42,15 @@ export default function HackathonsSection() {
           {showcaseProjects.map((project) => (
             <div
               key={project.name}
-              className="rounded-2xl border border-border bg-surface p-4 text-center transition-colors hover:border-orange/50"
+              className="rounded-2xl border border-border bg-[#0f1011] p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:border-[#FF8C42]/60 hover:bg-[#161616]"
             >
-              <div className="mx-auto flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-orange/20 bg-black/70">
+              <div className="mx-auto flex h-24 w-full max-w-45 items-center justify-center overflow-hidden rounded-2xl p-3 ">
                 <Image
                   src={project.image}
                   alt={`${project.name} logo`}
-                  width={64}
-                  height={64}
-                  className="h-full w-full object-cover object-center"
+                  width={160}
+                  height={160}
+                  className="max-h-full max-w-full object-contain object-center"
                 />
               </div>
               <h3 className="mt-4 font-display text-lg font-semibold text-white">
