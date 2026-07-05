@@ -15,14 +15,19 @@ export default function AboutSection() {
             Who we are.
           </h2>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/60 sm:text-base">
-            TECHBURST is Africa&rsquo;s ecosystem activation engine — a team
-            built for execution, not proposals. Replace this paragraph with your
-            real founding story, mission, and team background.
+            TechBurst is a technology ecosystem platform dedicated to
+            accelerating innovation across Africa by connecting founders,
+            startups, developers, investors, enterprises, and technology
+            enthusiasts. Through industry insights, events, strategic
+            partnerships, community initiatives, and digital storytelling,
+            TechBurst creates opportunities for collaboration, knowledge
+            sharing, and business growth.
           </p>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/60 sm:text-base">
-            Add a second paragraph here on team credentials, geographic
-            footprint, or what makes your execution model different from a
-            typical agency.
+            Our mission is to amplify African innovation, bridge the gap between
+            ideas and execution, and build an inclusive ecosystem where
+            technology drives economic growth, solves real-world challenges, and
+            empowers the next generation of innovators.
           </p>
         </div>
         <div className="relative overflow-hidden rounded-3xl p-6">
