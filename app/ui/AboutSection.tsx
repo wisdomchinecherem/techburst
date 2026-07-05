@@ -1,4 +1,4 @@
-import ImagePlaceholder from "./ImagePlaceholder";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -12,24 +12,28 @@ export default function AboutSection() {
             About
           </p>
           <h2 className="font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-            [Placeholder] Who we are.
+            Who we are.
           </h2>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/60 sm:text-base">
-            [Placeholder] TECHBURST is Africa&rsquo;s ecosystem activation
-            engine — a team built for execution, not proposals. Replace this
-            paragraph with your real founding story, mission, and team
-            background.
+            TECHBURST is Africa&rsquo;s ecosystem activation engine — a team
+            built for execution, not proposals. Replace this paragraph with your
+            real founding story, mission, and team background.
           </p>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/60 sm:text-base">
-            [Placeholder] Add a second paragraph here on team credentials,
-            geographic footprint, or what makes your execution model different
-            from a typical agency.
+            Add a second paragraph here on team credentials, geographic
+            footprint, or what makes your execution model different from a
+            typical agency.
           </p>
         </div>
-        <ImagePlaceholder
-          label="Team photo / office / event photo"
-          aspect="portrait"
-        />
+        <div className="relative overflow-hidden rounded-3xl p-6">
+          <Image
+            src="/aboutLogo.jpeg"
+            alt="TechBurst About Logo"
+            width={700}
+            height={700}
+            className="h-full w-full object-contain"
+          />
+        </div>
       </div>
     </section>
   );

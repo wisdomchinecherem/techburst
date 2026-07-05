@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 interface CarouselItem {
   title: string;
   label: string;
-  image?: StaticImageData;
+  image?: string | StaticImageData;
 }
 
 interface ImageCarouselModalProps {

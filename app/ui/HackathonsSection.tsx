@@ -4,7 +4,6 @@ import Image from "next/image";
 import { featuredStats, featuredTech, web3Projects } from "../types/projects";
 import TechChip from "./TechChip";
 import ProjectCard from "./ProjectCard";
-import ImagePlaceholder from "./ImagePlaceholder";
 import Web3VoiceImage from "@/public/webprojects/Screenshot 2026-07-04 233034.png";
 import circleLogo from "@/public/logos/Circle_.png";
 import Tether from "@/public/logos/Tether.png";
@@ -60,85 +59,98 @@ export default function HackathonsSection() {
           ))}
         </div>
 
-        <div className="mt-8 rounded-2xl border border-border bg-surface p-3 sm:p-5">
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-stretch">
-            <div className="overflow-hidden rounded-2xl border border-border bg-black/70 lg:h-full">
-              <ImagePlaceholder
-                label="Web3Voice project image / screenshot"
+        <div className="mt-8 overflow-hidden rounded-[32px] border border-border bg-[#090909] shadow-[0_40px_120px_rgba(0,0,0,0.25)]">
+          <div className="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+            <div className="relative overflow-hidden bg-[#0B0B0B] lg:rounded-r-none lg:rounded-l-[32px]">
+              <Image
                 src={Web3VoiceImage}
-                className="h-full w-full object-contain object-center"
-                aspect="wide"
+                alt="Web3Voice dashboard preview"
+                fill
+                className="object-cover"
               />
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/90 to-transparent" />
+              <div className="absolute left-6 bottom-6 rounded-full border border-white/10 bg-black/70 px-4 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-orange">
+                Web3Voice
+              </div>
             </div>
 
-            <div>
-              <div className="mb-4 flex items-center gap-2">
-                <span className="text-2xl">🏆</span>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange">
-                  Featured Win
+            <div className="flex flex-col justify-between rounded-[32px] bg-[#070707] p-8 sm:p-10 lg:rounded-l-none lg:rounded-r-[32px]">
+              <div>
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-orange/10 text-orange">
+                    🏆
+                  </span>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-orange">
+                      Featured Win
+                    </p>
+                    <p className="mt-1 text-sm text-white/50">
+                      The Decentralized Knowledge Layer
+                    </p>
+                  </div>
+                </div>
+
+                <h3 className="font-display text-3xl font-bold text-white sm:text-4xl">
+                  Web3Voice
+                </h3>
+                <p className="mt-5 text-base leading-8 text-white/70 sm:text-lg">
+                  A premier example of AI and blockchain convergence, Web3Voice
+                  tokenizes human discourse and rewards meaningful
+                  contributions. Its modular architecture distills insight from
+                  X Spaces and anchors it on-chain, creating a community-owned
+                  knowledge layer where voices are validated and rewarded
+                  through
+                  <span className="font-semibold text-orange">
+                    {" "}
+                    VOICE tokens.
+                  </span>
                 </p>
               </div>
 
-              <h3 className="font-display text-2xl font-bold text-white sm:text-3xl">
-                Web3Voice
-              </h3>
-              <p className="mt-1 text-sm font-medium text-white/50">
-                The Decentralized Knowledge Layer
-              </p>
-
-              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/70 sm:text-base">
-                A premier example of AI and blockchain convergence, Web3Voice
-                tokenizes human discourse and rewards meaningful contributions.
-                Its modular architecture runs a high-performance data engine
-                that distills insight from X Spaces and anchors it on-chain,
-                solving information overload and misinformation by creating a
-                community-owned knowledge layer where voices are validated and
-                rewarded through{" "}
-                <span className="font-semibold text-orange">VOICE tokens</span>.
-              </p>
-
-              <div className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-4">
-                {featuredStats.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="bg-black px-4 py-4 sm:px-5 sm:py-5"
-                  >
-                    <div className="font-display text-lg font-bold text-orange sm:text-xl">
-                      {stat.value}
+              <div className="mt-8">
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {featuredStats.map((stat) => (
+                    <div
+                      key={stat.label}
+                      className="rounded-3xl bg-[#050505] p-5 ring-1 ring-white/5"
+                    >
+                      <div className="font-display text-2xl font-bold text-orange sm:text-3xl">
+                        {stat.value}
+                      </div>
+                      <p className="mt-2 text-xs uppercase tracking-[0.22em] text-white/50">
+                        {stat.label}
+                      </p>
                     </div>
-                    <div className="mt-1 text-xs text-white/50">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-4 flex flex-wrap gap-2">
-                {featuredTech.map((tech) => (
-                  <TechChip key={tech} label={tech} />
-                ))}
-              </div>
-
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-xl border border-border bg-black p-3 sm:p-4">
-                  <h4 className="font-display text-base font-semibold text-white">
-                    Technical Excellence
-                  </h4>
-                  <p className="mt-2 text-sm leading-relaxed text-white/60">
-                    Built on Filecoin/IPFS for decentralized storage, with
-                    advanced LLM pipelines handling insight extraction and
-                    sentiment analysis at scale.
-                  </p>
+                  ))}
                 </div>
-                <div className="rounded-xl border border-border bg-black p-4 sm:p-5">
-                  <h4 className="font-display text-base font-semibold text-white">
-                    Funding &amp; Acceleration
-                  </h4>
-                  <p className="mt-2 text-sm leading-relaxed text-white/60">
-                    Secured $15,000 in funding, with the founding team now
-                    scaling the ecosystem at the Founders Forge accelerator
-                    program.
-                  </p>
+
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {featuredTech.map((tech) => (
+                    <TechChip key={tech} label={tech} />
+                  ))}
+                </div>
+
+                <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-3xl bg-[#060606] p-5 ring-1 ring-white/5">
+                    <h4 className="font-display text-base font-semibold text-white">
+                      Technical Excellence
+                    </h4>
+                    <p className="mt-2 text-sm leading-relaxed text-white/60">
+                      Built on Filecoin/IPFS for decentralized storage, with
+                      advanced LLM pipelines handling insight extraction and
+                      sentiment analysis at scale.
+                    </p>
+                  </div>
+                  <div className="rounded-3xl bg-[#060606] p-5 ring-1 ring-white/5">
+                    <h4 className="font-display text-base font-semibold text-white">
+                      Funding &amp; Acceleration
+                    </h4>
+                    <p className="mt-2 text-sm leading-relaxed text-white/60">
+                      Secured $15,000 in funding, with the founding team now
+                      scaling the ecosystem at the Founders Forge accelerator
+                      program.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
