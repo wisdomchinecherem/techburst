@@ -4,14 +4,17 @@ export default function StatsSection() {
   const allStats = [...statsRowOne, ...statsRowTwo];
 
   return (
-    <section className="border-b border-border px-6 py-20 sm:px-10">
+    <section id="stats" className="border-b border-border px-6 py-20 sm:px-10">
       <div className="mx-auto max-w-7xl">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
-          By The Numbers
+          Our Impact
         </p>
         <h2 className="max-w-2xl font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-          Documented outcomes, not projections.
+          Documented outcomes.
         </h2>
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-white sm:text-lg">
+          Numbers prove capability. Here is what we have built across Africa.
+        </p>
 
         <div className="mt-14 grid grid-cols-2 gap-px overflow-hidden border border-border bg-border sm:grid-cols-4">
           {allStats.map((stat) => (

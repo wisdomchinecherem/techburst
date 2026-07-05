@@ -42,23 +42,23 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-6 pb-16 sm:px-10 sm:pb-20">
         <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
-          Proof. Numbers. Action.
+          AFRICA'S ECOSYSTEM INFRASTRUCTURE PARTNER
         </p>
 
         <h1 className="max-w-4xl font-display text-4xl font-bold leading-[1.02] text-white sm:text-5xl md:text-6xl lg:text-7xl">
-          We Build Communities That Convert.
+          Building Africa's <br />
+          <span className="text-[#E07020]">Human Infrastructure</span>.
         </h1>
 
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/65 sm:text-lg">
-          TechBurst designs and runs the systems that connect communities,
-          founders, developers, institutions, and ecosystems across Africa. From
-          high-energy activations to long-term onboarding, we make participation
-          measurable, repeatable, and real.
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-white sm:text-lg">
+          TechBurst designs and runs the systems that help organizations enter
+          African markets, activate contributors, coordinate communities, and
+          transform participation into measurable outcomes.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="#hackathons"
+            href="#stats"
             className="inline-flex items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-black transition-colors hover:bg-orange-light"
           >
             See Our Impact
@@ -66,7 +66,7 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="inline-flex items-center rounded-md border border-orange px-5 py-3 text-sm font-semibold text-orange transition-colors hover:bg-orange/10"
+            className="inline-flex items-center rounded-md border border-orange px-5 py-3 text-sm font-semibold text-orange transition-colors hover:bg-orange-light hover:text-black"
           >
             Explore Services
           </a>
