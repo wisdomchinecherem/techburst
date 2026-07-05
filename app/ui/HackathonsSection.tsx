@@ -1,10 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import { featuredStats, featuredTech, web3Projects } from "../types/projects";
 import TechChip from "./TechChip";
 import ProjectCard from "./ProjectCard";
 import ImagePlaceholder from "./ImagePlaceholder";
 import Web3VoiceImage from "@/public/webprojects/Screenshot 2026-07-04 233034.png";
+// import circleLogo from "@/public/webprojects/"
+
+const showcaseProjects = [
+  { name: "Circle", image: Web3VoiceImage },
+  { name: "Protocol Labs", image: Web3VoiceImage },
+  { name: "ETH safari", image: Web3VoiceImage },
+];
 
 export default function HackathonsSection() {
   return (
@@ -27,37 +35,34 @@ export default function HackathonsSection() {
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {web3Projects.slice(0, 4).map((project) => {
-            const initials = project.name
-              .split(" ")
-              .slice(0, 2)
-              .map((word) => word[0])
-              .join("")
-              .toUpperCase();
-
-            return (
-              <div
-                key={project.slug}
-                className="rounded-2xl border border-border bg-surface p-4 text-center transition-colors hover:border-orange/50"
-              >
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-orange/20 bg-orange/10 text-lg font-semibold text-orange">
-                  {initials}
-                </div>
-                <h3 className="mt-4 font-display text-lg font-semibold text-white">
-                  {project.name}
-                </h3>
+          {showcaseProjects.map((project) => (
+            <div
+              key={project.name}
+              className="rounded-2xl border border-border bg-surface p-4 text-center transition-colors hover:border-orange/50"
+            >
+              <div className="mx-auto flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-orange/20 bg-black/70">
+                <Image
+                  src={project.image}
+                  alt={`${project.name} logo`}
+                  width={64}
+                  height={64}
+                  className="h-full w-full object-cover object-center"
+                />
               </div>
-            );
-          })}
+              <h3 className="mt-4 font-display text-lg font-semibold text-white">
+                {project.name}
+              </h3>
+            </div>
+          ))}
         </div>
 
         <div className="mt-8 rounded-2xl border border-border bg-surface p-3 sm:p-5">
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
-            <div className="overflow-hidden rounded-2xl border border-border bg-black/70">
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-stretch">
+            <div className="overflow-hidden rounded-2xl border border-border bg-black/70 lg:h-full">
               <ImagePlaceholder
                 label="Web3Voice project image / screenshot"
                 src={Web3VoiceImage}
-                className="object-cover object-center"
+                className="h-full w-full object-contain object-center"
                 aspect="wide"
               />
             </div>

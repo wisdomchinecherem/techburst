@@ -30,8 +30,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 text-sm text-white/50">
-              Africa&rsquo;s ecosystem activation engine — documented proof of
-              execution, not proposals.
+              Africa&rsquo;s ecosystem infrastructure partner — building the
+              systems behind sustainable growth.
             </p>
           </div>
 
@@ -70,7 +70,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-wrap justify-between gap-4 border-t border-border pt-8 text-xs text-white/35">
-          <span>© 2026 TECHBURST. All rights reserved.</span>
+          <span>
+            © 2026 TechBurst. Africa's Ecosystem Infrastructure Partner.
+          </span>
           <span>Built for builders.</span>
         </div>
       </div>

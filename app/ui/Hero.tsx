@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import { heroStats } from "../types/stats";
 import NetworkBackground from "./NetworkBackground";
 
 export default function Hero() {
@@ -47,10 +46,10 @@ export default function Hero() {
 
         <h1 className="max-w-4xl font-display text-4xl font-bold leading-[1.02] text-white sm:text-5xl md:text-6xl lg:text-7xl">
           Building Africa's <br />
-          <span className="text-[#E07020]">Human Infrastructure</span>.
+          <span className="text-orange">Human Infrastructure</span>.
         </h1>
 
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-white sm:text-lg">
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
           TechBurst designs and runs the systems that help organizations enter
           African markets, activate contributors, coordinate communities, and
           transform participation into measurable outcomes.
@@ -58,7 +57,7 @@ export default function Hero() {
 
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="#stats"
+            href="#impact"
             className="inline-flex items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-black transition-colors hover:bg-orange-light"
           >
             See Our Impact
@@ -66,7 +65,7 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="inline-flex items-center rounded-md border border-orange px-5 py-3 text-sm font-semibold text-orange transition-colors hover:bg-orange-light hover:text-black"
+            className="inline-flex items-center rounded-md border border-orange/70 px-5 py-3 text-sm font-semibold text-orange transition-colors hover:bg-orange/10"
           >
             Explore Services
           </a>
