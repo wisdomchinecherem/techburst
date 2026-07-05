@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Gem, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import logo from "../../public/logos/techburstlogo.jpg";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -13,8 +15,9 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-black/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-10">
-        <Link href="#top" className="flex items-center gap-2.5">
-          <Gem className="h-6 w-6 text-orange" strokeWidth={2} />
+        <Link href="" className="flex items-center gap-2.5">
+          {/* <Gem className="h-6 w-6 text-orange" strokeWidth={2} /> */}
+          <Image src={logo} alt="TechBurst Logo" className="h-8 w-8" />
           <span className="font-display text-lg font-bold tracking-tight text-white">
             TECHBURST
           </span>

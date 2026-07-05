@@ -5,7 +5,7 @@ import Image from "next/image";
 const teamMembers = [
   {
     initials: "FN",
-    name: "Faizan Naserian",
+    name: "Faizah Naserian",
     role: "Ecosystem Architect & Founder",
     image: "/founder.jpeg",
     description:
@@ -21,7 +21,7 @@ const teamMembers = [
     initials: "CK",
     name: "Cyndie Kamau",
     role: "Blockchain Protocol Engineer",
-    image: "/teams/WhatsApp Image 2026-07-05 at 9.33.52 AM.jpeg",
+    image: "/cyndie.jpeg",
     description:
       "Developer Relations professional, Rust developer, and Web3 technical educator focused on decentralized infrastructure, smart contract development, and growing developer ecosystems across Africa.",
     tags: [
