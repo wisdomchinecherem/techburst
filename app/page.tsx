@@ -9,6 +9,7 @@ import PartnersSection from "./ui/PartnersSection";
 import ServicesSection from "./ui/ServicesSection";
 import StatsSection from "./ui/StatsSection";
 import "./globals.css";
+import TeamSection from "./ui/TeamSection";
 
 export default function Page() {
   return (
@@ -22,6 +23,7 @@ export default function Page() {
       <CaseStudiesSection />
       <PartnersSection />
       <AboutSection />
+      <TeamSection />
       <section className="border-t border-border bg-[#0B0B0B] px-6 py-16 sm:px-10 sm:py-20">
         <div className="mx-auto max-w-5xl text-center">
           <blockquote className="font-display text-2xl leading-tight text-white sm:text-3xl md:text-4xl">
