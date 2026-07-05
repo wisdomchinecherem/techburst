@@ -36,7 +36,9 @@ export default function Page() {
           </blockquote>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
-              href="#top"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfdyQAczBQFnBK9ucQC9j-O1NyHiLGPiXhvQ3_-E_ycMXtZYA/viewform?usp=publish-editor"
+              target="_blank"
+              rel="noreferrer noopener"
               className="inline-flex items-center rounded-md bg-orange px-5 py-3 text-sm font-semibold text-black transition-colors hover:bg-orange-light"
             >
               Partner With Us

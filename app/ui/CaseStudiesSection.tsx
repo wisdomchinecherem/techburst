@@ -23,14 +23,24 @@ const caseStudies: CaseStudy[] = [
     result: "1,200+ students reached across 4 universities in 3 weeks.",
     slides: [
       {
+        title: "Nairobi auditorium",
+        label: "A large student audience in Nairobi",
+        image: "/nairabo campus/nairobi5.jpeg",
+      },
+      {
+        title: "Nairobi speaker",
+        label: "Presenter addressing the crowd",
+        image: "/nairabo campus/nairobi4.jpeg",
+      },
+      {
         title: "Nairobi campus activation",
         label: "Interactive workshop in Nairobi",
-        image: "/nairabo campus/nairobi1.jpeg",
+        image: "/nairabo campus/nairobi1.jpg",
       },
       {
         title: "Nairobi mentoring",
         label: "Hands-on development clinics",
-        image: "/nairabo campus/nairobi2.jpeg",
+        image: "/nairabo/DSC09967.jpeg",
       },
       {
         title: "Nairobi showcase",
@@ -40,12 +50,38 @@ const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    title: "Lagos Builder Summit",
-    result: "300 attendees, 49 partner-led breakout sessions.",
+    title: "Lagos Dev Fest",
+    result: "1,00+ attendees, 49 partner-led breakout sessions.",
     slides: [
       {
-        title: "Gallery pending",
-        label: "Image gallery will be added once assets are available.",
+        title: "Lagos main stage",
+        label: "Crowd gathered for the Lagos builder summit",
+        image: "/lagos/FFX03755.jpg",
+      },
+      {
+        title: "Lagos workshop",
+        label: "Hands-on developer session in Lagos",
+        image: "/lagos/KOP06412.jpg",
+      },
+      {
+        title: "Lagos networking",
+        label: "Attendees networking during the summit",
+        image: "/lagos/KOP06446.jpg",
+      },
+      {
+        title: "Lagos breakout",
+        label: "Small group collaboration at the summit",
+        image: "/lagos/KOP06447.jpg",
+      },
+      {
+        title: "Lagos showcase",
+        label: "Teams presenting their Web3 projects",
+        image: "/lagos/MHO_0082.jpg",
+      },
+      {
+        title: "Lagos closing",
+        label: "Summit closing session with the audience",
+        image: "/lagos/MHO_5671.jpg",
       },
     ],
   },
@@ -54,8 +90,39 @@ const caseStudies: CaseStudy[] = [
     result: "126 developers shipped their first on-chain transaction.",
     slides: [
       {
-        title: "Gallery pending",
-        label: "Image gallery will be added once assets are available.",
+        title: "Accra registration",
+        label: "Developers register for the Accra onboarding sprint",
+        image: "/accra/_MGL6205.JPG",
+      },
+      {
+        title: "Accra learning",
+        label: "A session in progress during the Accra event",
+        image: "/accra/_MGL6206.JPG",
+      },
+      {
+        title: "Accra collaboration",
+        label: "Participants collaborating during Accra workshops",
+        image: "/accra/_MGL6207.JPG",
+      },
+      {
+        title: "Accra keynote",
+        label: "Keynote presentation at the Accra sprint",
+        image: "/accra/_MGL6211.JPG",
+      },
+      {
+        title: "Accra demo day",
+        label: "Teams sharing results at the Accra showcase",
+        image: "/accra/_MGL6221.JPG",
+      },
+      {
+        title: "Accra closing",
+        label: "Final wrap-up at the Accra onboarding sprint",
+        image: "/accra/_MGL6225.JPG",
+      },
+      {
+        title: "Accra networking",
+        label: "Networking and community building in Accra",
+        image: "/accra/_MGL6227.JPG",
       },
     ],
   },

@@ -36,7 +36,9 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="#partner"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfdyQAczBQFnBK9ucQC9j-O1NyHiLGPiXhvQ3_-E_ycMXtZYA/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noreferrer noopener"
           className="inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-black transition-colors hover:bg-orange-light"
         >
           Partner With Us

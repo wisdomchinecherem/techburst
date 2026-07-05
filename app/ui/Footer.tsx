@@ -1,4 +1,5 @@
-import { Gem } from "lucide-react";
+import Image from "next/image";
+import logo from "../../public/logos/techburstlogo.jpg";
 
 const footerLinks: Record<
   string,
@@ -11,9 +12,12 @@ const footerLinks: Record<
     { label: "About", href: "#about" },
   ],
   Connect: [
-    { label: "Partner With Us", href: "#partner" },
+    {
+      label: "Partner With Us",
+      href: "https://docs.google.com/forms/d/e/1FAIpQLSfdyQAczBQFnBK9ucQC9j-O1NyHiLGPiXhvQ3_-E_ycMXtZYA/viewform?usp=publish-editor",
+      target: "_blank",
+    },
     { label: "Twitter / X", href: "https://x.com/T3chBurst", target: "_blank" },
-    { label: "LinkedIn", href: "#" },
   ],
 };
 
@@ -24,7 +28,11 @@ export default function Footer() {
         <div className="flex flex-wrap justify-between gap-12">
           <div className="max-w-xs">
             <div className="flex items-center gap-2.5">
-              <Gem className="h-6 w-6 text-[#FF8C42]" strokeWidth={2} />
+              <Image
+                src={logo}
+                alt="TechBurst Logo"
+                className="h-8 w-8 object-cover"
+              />
               <span className="font-display text-lg font-bold text-[#fdfdff]">
                 TECHBURST
               </span>

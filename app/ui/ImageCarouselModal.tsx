@@ -97,12 +97,17 @@ export default function ImageCarouselModal({
         <div className="flex-1 p-2 sm:p-3">
           <div className="relative flex h-full w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-xl border border-dashed border-border bg-black/70 px-4 py-6 text-center sm:px-6 sm:py-8">
             {currentItem.image ? (
-              <Image
-                src={currentItem.image}
-                alt={currentItem.label}
-                fill
-                className="object-contain"
-              />
+              <div
+                key={currentIndex}
+                className="absolute inset-0 overflow-hidden rounded-xl"
+              >
+                <Image
+                  src={currentItem.image}
+                  alt={currentItem.label}
+                  fill
+                  className="object-contain"
+                />
+              </div>
             ) : (
               <>
                 <ImageIcon
