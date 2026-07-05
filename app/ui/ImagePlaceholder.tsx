@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 
 interface ImagePlaceholderProps {
   label: string;
-  src: StaticImageData;
+  src?: StaticImageData;
   aspect?: "square" | "video" | "portrait" | "wide";
   className?: string;
 }
