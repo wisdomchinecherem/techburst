@@ -57,7 +57,7 @@ export default function ServicesSection() {
       className="border-b border-border px-6 py-12 sm:px-10 sm:py-16"
     >
       <div className="mx-auto max-w-7xl">
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF8C42]">
           WHAT WE DO
         </p>
         <h2 className="max-w-3xl font-display text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
@@ -71,7 +71,7 @@ export default function ServicesSection() {
           <div className="border-b border-border px-6 py-5 sm:px-8">
             <p className="text-sm leading-relaxed text-white/70 sm:text-base">
               Everything we build is designed around one goal:{" "}
-              <span className="font-semibold text-orange">
+              <span className="font-semibold text-[#FF8C42]">
                 Helping organizations successfully enter, grow and scale
                 communities across Africa.
               </span>
@@ -84,13 +84,16 @@ export default function ServicesSection() {
               return (
                 <div
                   key={pillar.number}
-                  className="border-b border-border p-6 transition-colors hover:border-orange/50 lg:border-b-0 lg:border-r lg:last:border-r-0 sm:p-7"
+                  className="border-b border-border bg-[#0f1011] p-6 transition-colors hover:border-[#FF8C42]/50 lg:border-b-0 lg:border-r lg:last:border-r-0 sm:p-7"
                 >
-                  <p className="text-[11px] uppercase tracking-[0.2em] text-orange/70">
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-[#FF8C42]/70">
                     {pillar.number}
                   </p>
-                  <div className="mt-5 flex h-10 w-10 items-center justify-center border border-orange/20 bg-orange/10">
-                    <Icon className="h-5 w-5 text-orange" strokeWidth={1.8} />
+                  <div className="mt-5 flex h-10 w-10 items-center justify-center border border-[#FF8C42]/20 bg-[#FF8C42]/10">
+                    <Icon
+                      className="h-5 w-5 text-[#FF8C42]"
+                      strokeWidth={1.8}
+                    />
                   </div>
                   <h3 className="mt-5 font-display text-lg font-semibold text-white">
                     {pillar.title}
@@ -102,7 +105,7 @@ export default function ServicesSection() {
                     {pillar.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-none border border-orange/20 bg-black/70 px-2.5 py-1 text-[10px] uppercase tracking-[0.16em] text-white/60"
+                        className="rounded-none border border-[#FF8C42]/20 bg-black/70 px-2.5 py-1 text-[10px] uppercase tracking-[0.16em] text-white/60"
                       >
                         {tag}
                       </span>

@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-black: #0A0A0A;
-  --color-surface: #141414;
-  --color-border: #9A3E00;
+  --color-black: #0f1011;
+  --color-surface: #1a0a00;
+  --color-border: #c45a00;
 
-  --color-orange: #FF8C42;
-  --color-orange-light: #FFBF00;
+  --color-orange: #c45a00;
+  --color-orange-light: #ff8c42;
 
-  --font-display: var(--font-display);
-  --font-body: var(--font-body);
+  --font-display: var(--font-geist-sans);
+  --font-body: var(--font-geist-sans);
 }
 
 ::selection {
-  background-color: #CC5500;
-  color: #000000;
+  background-color: #c45a00;
+  color: #fdfdff;
 }
 
 html {
@@ -43,6 +43,6 @@ html {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #FF6A00;
+  outline: 2px solid #c45a00;
   outline-offset: 3px;
 }

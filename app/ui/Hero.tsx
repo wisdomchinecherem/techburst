@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-border pt-28 sm:pt-36"
+      className="relative overflow-hidden border-b border-border bg-[#0f1011] pt-28 sm:pt-36"
     >
       <NetworkBackground />
 
@@ -40,13 +40,13 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 pb-16 sm:px-10 sm:pb-20">
-        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
+        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF8C42]">
           AFRICA'S ECOSYSTEM INFRASTRUCTURE PARTNER
         </p>
 
         <h1 className="max-w-4xl font-display text-4xl font-bold leading-[1.02] text-white sm:text-5xl md:text-6xl lg:text-7xl">
           Building Africa's <br />
-          <span className="text-orange">Human Infrastructure</span>.
+          <span className="text-[#FF8C42]">Human Infrastructure</span>.
         </h1>
 
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
@@ -58,14 +58,14 @@ export default function Hero() {
         <div className="mt-8 flex flex-wrap gap-3">
           <a
             href="#impact"
-            className="inline-flex items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-black transition-colors hover:bg-orange-light"
+            className="inline-flex items-center gap-2 rounded-md bg-[#C45A00] px-5 py-3 text-sm font-semibold text-[#fdfdff] transition-colors hover:bg-[#FF8C42]"
           >
             See Our Impact
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
             href="#services"
-            className="inline-flex items-center rounded-md border border-orange/70 px-5 py-3 text-sm font-semibold text-orange transition-colors hover:bg-orange/10"
+            className="inline-flex items-center rounded-md border border-[#FF8C42]/70 px-5 py-3 text-sm font-semibold text-[#FF8C42] transition-colors hover:bg-[#FF8C42]/10"
           >
             Explore Services
           </a>
@@ -77,7 +77,7 @@ export default function Hero() {
               key={stat.label}
               className="rounded-xl border border-border/80 bg-surface/70 p-3 sm:p-4"
             >
-              <div className="font-display text-2xl font-bold text-orange sm:text-3xl">
+              <div className="font-display text-2xl font-bold text-[#FF8C42] sm:text-3xl">
                 {stat.value}
               </div>
               <div className="mt-1 text-[11px] uppercase tracking-[0.16em] text-white/50 sm:text-xs">

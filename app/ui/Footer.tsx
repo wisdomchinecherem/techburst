@@ -24,8 +24,8 @@ export default function Footer() {
         <div className="flex flex-wrap justify-between gap-12">
           <div className="max-w-xs">
             <div className="flex items-center gap-2.5">
-              <Gem className="h-6 w-6 text-orange" strokeWidth={2} />
-              <span className="font-display text-lg font-bold text-white">
+              <Gem className="h-6 w-6 text-[#FF8C42]" strokeWidth={2} />
+              <span className="font-display text-lg font-bold text-[#fdfdff]">
                 TECHBURST
               </span>
             </div>
@@ -58,7 +58,7 @@ export default function Footer() {
                           ? "noreferrer noopener"
                           : undefined
                       }
-                      className="mb-3 block text-sm text-white/70 hover:text-orange"
+                      className="mb-3 block text-sm text-white/70 hover:text-[#FF8C42]"
                     >
                       {link.label}
                     </a>

@@ -36,7 +36,7 @@ export default function StatsSection() {
   return (
     <section id="impact" className="border-b border-border px-6 py-20 sm:px-10">
       <div className="mx-auto max-w-7xl">
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-orange">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#FF8C42]">
           OUR IMPACT
         </p>
         <h2 className="max-w-2xl font-display text-3xl font-bold text-white sm:text-4xl md:text-5xl">
@@ -50,7 +50,7 @@ export default function StatsSection() {
           {impactGroups.map((group, index) => (
             <div
               key={group.title}
-              className={`border border-border bg-surface/90 p-6 sm:p-8 ${
+              className={`border border-border bg-[#1A0A00]/80 p-6 sm:p-8 ${
                 index === impactGroups.length - 1 ? "lg:col-start-2" : ""
               }`}
             >
@@ -60,7 +60,7 @@ export default function StatsSection() {
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {group.stats.map((stat) => (
                   <div key={stat.label}>
-                    <div className="font-display text-3xl font-bold text-orange sm:text-4xl">
+                    <div className="font-display text-3xl font-bold text-[#FF8C42] sm:text-4xl">
                       {stat.value}
                     </div>
                     <div className="mt-2 text-[11px] uppercase tracking-[0.16em] text-white/50">
@@ -72,7 +72,7 @@ export default function StatsSection() {
             </div>
           ))}
 
-          <div className="border border-border bg-surface/90 p-6 sm:p-8 lg:col-start-1 lg:row-start-2">
+          <div className="border border-border bg-[#1A0A00]/80 p-6 sm:p-8 lg:col-start-1 lg:row-start-2">
             <h3 className="font-display text-xl font-semibold text-white">
               Market Access
             </h3>
@@ -80,7 +80,7 @@ export default function StatsSection() {
               {marketAccessTags.map((tag) => (
                 <span
                   key={tag}
-                  className="border border-orange/20 bg-black/70 px-3 py-2 text-sm font-medium text-white/70"
+                  className="border border-[#FF8C42]/20 bg-black/70 px-3 py-2 text-sm font-medium text-white/70"
                 >
                   {tag}
                 </span>

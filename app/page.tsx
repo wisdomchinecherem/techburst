@@ -12,7 +12,7 @@ import "./globals.css";
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-[#0f1011] text-[#fdfdff]">
       <Navbar />
       <Hero />
       <LogoMarquee />
