@@ -6,19 +6,25 @@ import TechChip from "./TechChip";
 import ProjectCard from "./ProjectCard";
 import ImagePlaceholder from "./ImagePlaceholder";
 import ImageCarouselModal from "./ImageCarouselModal";
+import Web3VoiceImage from "@/public/webprojects/Screenshot 2026-07-04 233034.png";
+import web3voiceImage2 from "@/public/webprojects/Screenshot 2026-07-04 233056.png";
+import web3voiceImage3 from "@/public/webprojects/Screenshot 2026-07-04 233124.png";
 
 const featuredGalleryItems = [
   {
     title: "Web3Voice preview",
     label: "Featured Web3Voice interface placeholder",
+    image: Web3VoiceImage,
   },
   {
     title: "Community dashboard",
     label: "Community insight dashboard placeholder",
+    image: web3voiceImage2,
   },
   {
     title: "On-chain proof layer",
     label: "Knowledge layer and tokenized contribution placeholder",
+    image: web3voiceImage3,
   },
 ];
 
@@ -66,6 +72,7 @@ export default function HackathonsSection() {
           >
             <ImagePlaceholder
               label="Web3Voice project image / screenshot"
+              src={Web3VoiceImage}
               aspect="wide"
             />
           </button>

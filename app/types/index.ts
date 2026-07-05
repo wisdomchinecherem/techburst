@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import { StaticImageData } from "next/image";
 
 export interface Service {
   number: string;
@@ -21,6 +22,7 @@ export interface Web3Project {
   name: string;
   vision: string;
   technologies: string[];
+  image: StaticImageData;
 }
 
 export interface FeaturedStat {

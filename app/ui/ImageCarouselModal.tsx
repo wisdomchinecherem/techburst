@@ -1,11 +1,13 @@
 "use client";
 
 import { ArrowLeft, ArrowRight, ImageIcon, X } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
 interface CarouselItem {
   title: string;
   label: string;
+  image?: StaticImageData;
 }
 
 interface ImageCarouselModalProps {
@@ -65,7 +67,7 @@ export default function ImageCarouselModal({
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-2 backdrop-blur-sm sm:p-4"
+      className="fixed inset-0 z-100 flex items-center justify-center bg-black/90 p-2 backdrop-blur-sm sm:p-4"
       onClick={onClose}
     >
       <div
@@ -93,20 +95,34 @@ export default function ImageCarouselModal({
         </div>
 
         <div className="flex-1 p-2 sm:p-3">
-          <div className="flex h-full w-full flex-col items-center justify-center gap-3 rounded-xl border border-dashed border-border bg-black/70 px-4 py-6 text-center sm:px-6 sm:py-8">
-            <ImageIcon className="h-10 w-10 text-white/25" strokeWidth={1.5} />
-            <div className="max-w-xl">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white/30">
-                Placeholder slide
-              </p>
-              <p className="mt-2 text-lg font-semibold text-white sm:text-xl">
-                {currentItem.label}
-              </p>
-              <p className="mt-2 text-sm text-white/60 sm:text-base">
-                This gallery is sized to fit the screen while keeping the title
-                and controls visible.
-              </p>
-            </div>
+          <div className="relative flex h-full w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-xl border border-dashed border-border bg-black/70 px-4 py-6 text-center sm:px-6 sm:py-8">
+            {currentItem.image ? (
+              <Image
+                src={currentItem.image}
+                alt={currentItem.label}
+                fill
+                className="object-contain"
+              />
+            ) : (
+              <>
+                <ImageIcon
+                  className="h-10 w-10 text-white/25"
+                  strokeWidth={1.5}
+                />
+                <div className="max-w-xl">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white/30">
+                    Placeholder slide
+                  </p>
+                  <p className="mt-2 text-lg font-semibold text-white sm:text-xl">
+                    {currentItem.label}
+                  </p>
+                  <p className="mt-2 text-sm text-white/60 sm:text-base">
+                    This gallery is sized to fit the screen while keeping the
+                    title and controls visible.
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
 

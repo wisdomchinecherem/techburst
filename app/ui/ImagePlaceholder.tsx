@@ -1,7 +1,8 @@
-import { ImageIcon } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
 
 interface ImagePlaceholderProps {
   label: string;
+  src: StaticImageData;
   aspect?: "square" | "video" | "portrait" | "wide";
   className?: string;
 }
@@ -13,24 +14,25 @@ const aspectMap: Record<string, string> = {
   wide: "aspect-[21/9]",
 };
 
-/**
- * Drop-in placeholder for real images. Swap this out for a
- * Next.js <Image> component once assets are ready — the label
- * tells you exactly what should go here.
- */
 export default function ImagePlaceholder({
   label,
+  src,
   aspect = "video",
   className = "",
 }: ImagePlaceholderProps) {
   return (
-    <div
-      className={`flex ${aspectMap[aspect]} w-full flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-border bg-surface/60 text-center ${className}`}
-    >
-      <ImageIcon className="h-6 w-6 text-white/25" strokeWidth={1.5} />
-      <span className="px-4 text-xs font-medium uppercase tracking-wide text-white/30">
-        {label}
-      </span>
+    <div className="overflow-hidden rounded-xl border border-border">
+      {src ? (
+        <Image
+          src={src}
+          alt={label}
+          className={`overflow-hidden rounded-xl border border-border ${aspectMap[aspect]} ${className}`}
+        />
+      ) : (
+        <div className="flex h-full w-full items-center justify-center bg-surface text-white/40">
+          {label}
+        </div>
+      )}
     </div>
   );
 }

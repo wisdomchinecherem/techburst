@@ -17,6 +17,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     {
       title: project.name,
       label: `${project.name} preview placeholder`,
+      image: project.image,
     },
     {
       title: `${project.name} architecture`,
@@ -46,6 +47,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         >
           <ImagePlaceholder
             label={`${project.name} screenshot`}
+            src={project.image}
             aspect="video"
           />
         </button>
