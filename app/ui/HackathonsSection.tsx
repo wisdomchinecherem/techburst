@@ -41,7 +41,7 @@ export default function HackathonsSection() {
           {showcaseProjects.map((project) => (
             <div
               key={project.name}
-              className="rounded-2xl border border-border bg-[#0f1011] p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:border-[#FF8C42]/60 hover:bg-[#161616]"
+              className="rounded-2xl  bg-[#0f1011] p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:border-[#FF8C42]/60 hover:bg-[#161616]"
             >
               <div className="mx-auto flex h-24 w-full max-w-45 items-center justify-center overflow-hidden rounded-2xl p-3 ">
                 <Image

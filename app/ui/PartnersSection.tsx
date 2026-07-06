@@ -48,7 +48,7 @@ export default function PartnersSection() {
             return (
               <div
                 key={partner.name}
-                className={`flex h-28 items-center justify-center rounded-2xl border border-border p-3 sm:p-4 ${
+                className={`flex h-28 items-center justify-center rounded-2xl p-3 sm:p-4 ${
                   isBrave ? "bg-[#fdfdff]" : "bg-[#fdfdff]"
                 }`}
               >

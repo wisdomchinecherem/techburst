@@ -21,7 +21,7 @@ export default function Hero() {
         aria-hidden
         className="pointer-events-none absolute right-0 top-0 h-72 w-72 opacity-40 sm:h-96 sm:w-96"
       >
-        <svg viewBox="0 0 200 200" className="h-full w-full">
+        {/* <svg viewBox="0 0 200 200" className="h-full w-full">
           <g stroke="#F5A623" strokeWidth="0.6" fill="none" opacity="0.5">
             <path d="M60 0 L120 60 L120 140" />
             <path d="M90 0 L150 60" />
@@ -36,7 +36,7 @@ export default function Hero() {
               transform="rotate(45 155 25)"
             />
           </g>
-        </svg>
+        </svg> */}
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 pb-16 sm:px-10 sm:pb-20">
@@ -71,11 +71,11 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-8 grid grid-cols-2 gap-3 rounded-2xl border border-border bg-black/40 p-3 shadow-[0_0_0_1px_rgba(255,106,0,0.08)] backdrop-blur-sm sm:grid-cols-4 sm:p-4">
+        <div className="mt-8 grid grid-cols-2 gap-3 rounded-2xl bg-black/40 p-3 shadow-[0_0_0_1px_rgba(255,106,0,0.08)] backdrop-blur-sm sm:grid-cols-4 sm:p-4">
           {proofHighlights.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-xl border border-border/80 bg-surface/70 p-3 sm:p-4"
+              className="rounded-xl bg-surface/70 p-3 sm:p-4"
             >
               <div className="font-display text-2xl font-bold text-[#FF8C42] sm:text-3xl">
                 {stat.value}
