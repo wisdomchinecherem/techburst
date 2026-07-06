@@ -13,7 +13,7 @@ import TeamSection from "./ui/TeamSection";
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#0f1011] text-[#fdfdff]">
+    <main id="top" className="min-h-screen bg-[#0f1011] text-[#fdfdff]">
       <Navbar />
       <Hero />
       <LogoMarquee />

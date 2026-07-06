@@ -145,7 +145,7 @@ export default function HackathonsSection() {
                   />
                 </div>
                 <div className="mt-6 space-y-3">
-                  <p className="text-sm leading-relaxed text-white/70">
+                  {/* <p className="text-sm leading-relaxed text-white/70">
                     Web3Voice is shown inside a polished preview card rather
                     than stretched across a full panel. This keeps the image
                     visible, proportionate, and aligned with the section.
@@ -153,7 +153,7 @@ export default function HackathonsSection() {
                   <p className="text-sm leading-relaxed text-white/70">
                     The design now gives the screenshot room to breathe while
                     still highlighting the product in a premium Web3 showcase.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
