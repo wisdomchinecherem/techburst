@@ -8,8 +8,13 @@
   --color-orange: #c45a00;
   --color-orange-light: #ff8c42;
 
-  --font-display: var(--font-geist-sans);
-  --font-body: var(--font-geist-sans);
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
 }
 
 ::selection {
