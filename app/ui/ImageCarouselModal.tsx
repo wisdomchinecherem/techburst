@@ -71,7 +71,7 @@ export default function ImageCarouselModal({
       onClick={onClose}
     >
       <div
-        className="flex h-[92vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-orange/40 bg-surface shadow-2xl"
+        className="flex h-[92vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-orange/40 bg-[#090909] shadow-2xl"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="flex items-center justify-between gap-3 border-b border-border px-3 py-3 sm:px-4">

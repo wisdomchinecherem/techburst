@@ -164,7 +164,7 @@ export default function HackathonsSection() {
           <h3 className="font-display text-xl font-bold text-white sm:text-2xl">
             Project Portfolio
           </h3>
-          <div className="mt-4 divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface">
+          <div className="mt-4 divide-y divide-border overflow-hidden rounded-2xl border border-border bg-[#090909]">
             {web3Projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}

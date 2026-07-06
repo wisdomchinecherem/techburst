@@ -75,7 +75,7 @@ export default function Hero() {
           {proofHighlights.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-xl bg-surface/70 p-3 sm:p-4"
+              className="rounded-xl bg-[#090909] p-3 sm:p-4"
             >
               <div className="font-display text-2xl font-bold text-white sm:text-3xl">
                 {stat.value}

@@ -50,7 +50,7 @@ export default function StatsSection() {
           {impactGroups.map((group, index) => (
             <div
               key={group.title}
-              className={`border border-border bg-[#1A0A00]/80 p-6 sm:p-8 ${
+              className={`border border-border bg-[#090909] p-6 sm:p-8 ${
                 index === impactGroups.length - 1 ? "lg:col-start-2" : ""
               }`}
             >
@@ -60,7 +60,7 @@ export default function StatsSection() {
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {group.stats.map((stat) => (
                   <div key={stat.label}>
-                    <div className="font-display text-3xl font-bold text-[#FF8C42] sm:text-4xl">
+                    <div className="font-display text-3xl font-bold text-white sm:text-4xl">
                       {stat.value}
                     </div>
                     <div className="mt-2 text-[11px] uppercase tracking-[0.16em] text-white/50">
@@ -72,7 +72,7 @@ export default function StatsSection() {
             </div>
           ))}
 
-          <div className="border border-border bg-[#1A0A00]/80 p-6 sm:p-8 lg:col-start-1 lg:row-start-2">
+          <div className="border border-border bg-[#090909] p-6 sm:p-8 lg:col-start-1 lg:row-start-2">
             <h3 className="font-display text-xl font-semibold text-white">
               Market Access
             </h3>

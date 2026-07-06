@@ -66,7 +66,7 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.initials}
-              className="overflow-hidden rounded-[28px] border border-border bg-[#090909] p-6 shadow-[0_30px_90px_rgba(0,0,0,0.18)] transition hover:-translate-y-1 hover:border-orange/40"
+              className="overflow-hidden rounded-[28px] bg-[#090909] p-6 shadow-[0_30px_90px_rgba(0,0,0,0.18)] transition hover:-translate-y-1"
             >
               <div className="flex flex-col gap-6 lg:flex-row">
                 <div className="relative min-h-[220px] overflow-hidden rounded-[28px] border border-white/10 bg-[#0f1011] lg:h-[260px] lg:w-[260px]">

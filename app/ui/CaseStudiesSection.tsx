@@ -179,7 +179,7 @@ export default function CaseStudiesSection() {
             return (
               <div
                 key={study.title}
-                className="overflow-hidden rounded-xl border border-border bg-surface"
+                className="overflow-hidden rounded-xl bg-[#090909]"
               >
                 <button
                   type="button"
